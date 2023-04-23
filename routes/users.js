@@ -4,8 +4,10 @@ var typeorm = require("typeorm");
 
 var router = express.Router()
 module.exports = router
-
+var token = 'SECRET_TOKEN2_f8ed84e8f41e4146403dd4a6bbcea5e418d23a9';
 router.get('/', async (req, res, next) => {
+
+  username = req.body.username;
 
   const mongoConnection = typeorm.getConnection('mysql')
   const repo = mongoConnection.getRepository("Users")
@@ -35,6 +37,7 @@ router.post('/', async (req, res, next) => {
 
     const savedRecord = await repo.save(user)
     console.log("Post has been saved: ", savedRecord)
+    return (user.name)
     return res.sendStatus(200)
 
   } catch (err) {
