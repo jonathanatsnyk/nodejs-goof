@@ -18,7 +18,6 @@ var fs = require('fs');
 
 // prototype-pollution
 var _ = require('lodash');
-
 exports.index = function (req, res, next) {
   Todo.
     find({}).
@@ -319,7 +318,7 @@ const users = [
 
 let messages = [];
 let lastId = 1;
-
+var token = 'SECRETTOKEN239293IO3I3'
 function findUser(auth) {
   return users.find((u) =>
     u.name === auth.name &&
