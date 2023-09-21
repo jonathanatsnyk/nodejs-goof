@@ -1,0 +1,6 @@
+Executable doesn't exist, trying to download.
+Downloading from 'https://static.snyk.io/cli/v1.1212.0/snyk-linux' to '/usr/local/lib/node_modules/snyk/wrapper_dist/snyk-linux'
+Shasums:
+- actual:   782aa91cc398a53de52cc6348364cf3d1e27fa6bf6a4a7327999f23400da1896
+- expected: 782aa91cc398a53de52cc6348364cf3d1e27fa6bf6a4a7327999f23400da1896
+Downloaded successfull! 

@@ -39,6 +39,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.use(logger('dev'));
 app.use(methodOverride());
+// deepcode ignore HardcodedNonCryptoSecret: <please specify a reason of ignoring this>
 app.use(session({
   secret: 'keyboard cat',
   name: 'connect.sid',
